@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:  12px;
+    color: hsl(240, 6%, 50%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 10rem auto;
+    background: white;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem hsl(237, 12%, 33%);
+}
+
+.image{
+    margin: auto;
+}
+
+.illus{
+    margin-top: -7rem;
+}
+
+.illdes, .box{
+    display: none;
+}
+
+.shadow{
+    margin-top: -5rem;
+}
+
+.shades{
+    display: none;
+}
+
+.faq{
+    margin: -7rem 2rem 0 2rem;
+    width: 90%;
+}
+
+.section{
+   padding-top: 8.5rem;
+}
+
+h1{
+    text-align: center;
+    color: hsl(237, 12%, 33%)
+}
+
+.details{
+    padding-bottom: 4rem;
+}
+
+details{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+hr{
+    height: 1px;
+    background-color: hsl(240, 5%, 91%);
+    border: none;
+}
+
+summary:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+
+details > p{
+    margin-top: 0.7rem;
+    width: 90%;
+}
+
+summary{
+    display: block;
+}
+
+summary::marker {
+    display: none;
+}
+
+summary::after{
+    margin-left: 5rem;
+    display: inline-block;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    content: '\203A';
+    font-weight: bold;
+    color: hsl(14, 88%, 65%);
+    transform: rotate(90deg);
+}
+
+.third > summary::after{
+    margin-left: 7.7rem;
+}
+
+.fourth > summary::after{
+    margin-left: 7.5rem;
+}
+
+.fifth > summary::after{
+    margin-left: 5.8rem;
+}
+
+details[open] summary::after{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+details[open] > summary{
+    font-weight: bold;
+    color: hsl(237, 12%, 33%);
+}
+
+.attribution{
+    margin-bottom: 4rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 450px){
+    body{
+        background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    }
+
+    .wrapper{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 80%;
+        height: 70vh;
+    }
+
+    .illus, .shadow{
+        display: none;
+    }
+
+    .illdes, .shades, .box{
+        display: block;
+    }
+
+    .illdes{
+        margin: 3rem -4rem;
+    }
+
+    .image{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+
+    .shades{
+        margin-top: -45rem;
+        margin-left: -38rem;
+    }
+
+    .box{
+        position: absolute;
+        top: 12rem;
+        left: -6rem;
+    }
+
+    .section{
+        padding-top: 10rem;
+    }
+
+    h1{
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .faq{
+        position: relative;
+        margin-top: -6rem;
+        margin-left: 5rem;
+        right: 3%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width:449px){
+  .illdes{
+        width: 130%;
+        margin-top: auto;
+  }
+
+  .wrapper{
+      height: 60vh;
+  }
+
+  .shades{
+      z-index: -99;
+      margin-left: -50rem;
+  }
+
+  .faq{
+      position: relative;
+      right: 6rem;
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      margin-left: 7rem;
+}
+
+.box{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    top: 4rem;
+    left: -7rem;
+}
+}
